@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+//The Effect is the basic unit of the EffectSystem
+//The EffectSystem applies an effect to a receiver
+
+//The effect can be of many forms, but it is divided in two macro categories:
+//Atomic: Instant effect, applied exactly when added to the receiver
+//Tick: Applied every interval for a duration, such as bleeding damage every second for 10 seconds
 
 [System.Serializable]
 public abstract class Effect
